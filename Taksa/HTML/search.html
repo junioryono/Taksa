@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+            
+            #myInput {
+                background-image: url('search.png');
+                background-position: 10px 12px;
+                background-repeat: no-repeat;
+                width: 100%;
+                font-size: 16px;
+                padding: 12px 20px 12px 40px;
+                border: 1px solid #ddd;
+                margin-bottom: 12px;
+            }
+            
+            #myUL {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            #myUL li a {
+                border: 1px solid #ddd;
+                margin-top: -1px; /* Prevent double borders */
+                background-color: #f6f6f6;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px;
+                color: black;
+                display: block;
+                -webkit-touch-callout: none;
+            }
+            
+            #myUL li a:hover:not(.header) {
+                background-color: #eee;
+            }
+            </style>
+    </head>
+    <body>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search">
+            
+            <ul id="myUL">
+                <li><a href="taksa://open/AboutUs">About Us</a></li>
+                <li><a href="taksa://open/Baptism">Baptism</a></li>
+                <li><a href="taksa://open/SurethArabicMass">Chaldean Mass</a></li>
+                <li><a href="taksa://open/Chants">Chants</a></li>
+                <li><a href="taksa://open/ChantsBautha">Chants - Bautha</a></li>
+                <li><a href="taksa://open/ChantsChristmasTone">Chants - Christmas Tone</a></li>
+                <li><a href="taksa://open/ChantsGospelEpistleMelodies">Chants - Gospel and Epistle Melodies</a></li>
+                <li><a href="taksa://open/ChantsLentenMelodies">Chants - Lenten Melodies</a></li>
+                <li><a href="taksa://open/ContactUs">Contact Us</a></li>
+                <li><a href="taksa://open/DailyLectionary">Daily Lectionary</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishAdvent">Daily Lectionary English - Advent</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishCrowningoftheChurch">Daily Lectionary English - Crowning of the Church</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishElijah">Daily Lectionary English - Elijah</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishEpiphany">Daily Lectionary English - Epiphany</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishLent">Daily Lectionary English - Lent</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishMoses">Daily Lectionary English - Moses</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishNativity">Daily Lectionary English - Nativity</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishResurrection">Daily Lectionary English - Resurrection</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishSummer">Daily Lectionary English - Summer</a></li>
+                <li><a href="taksa://open/DailyLectionaryEnglishTheApostles">Daily Lectionary English - The Apostles</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethAdvent">Daily Lectionary Sureth - Advent</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethCrowningoftheChurch">Daily Lectionary Sureth - Crowning of the Church</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethElijah">Daily Lectionary Sureth - Elijah</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethEpiphany">Daily Lectionary Sureth - Epiphany</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethLent">Daily Lectionary Sureth - Lent</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethMoses">Daily Lectionary Sureth - Moses</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethNativity">Daily Lectionary Sureth - Nativity</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethResurrection">Daily Lectionary Sureth - Resurrection</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethSummer">Daily Lectionary Sureth - Summer</a></li>
+                <li><a href="taksa://open/DailyLectionarySurethTheApostles">Daily Lectionary Sureth - The Apostles</a></li>
+                <li><a href="taksa://open/Engagement">Engagement</a></li>
+                <li><a href="taksa://open/EnglishChaldeanMass">English Mass</a></li>
+                <li><a href="taksa://open/EveningPrayer">Evening Prayer</a></li>
+                <li><a href="taksa://open/Funeral">Funeral</a></li>
+                <li><a href="taksa://open/HolyOrders">Holy Orders</a></li>
+                <li><a href="taksa://open/Hymns">Hymns</a></li>
+                <li><a href="taksa://open/Collection">Hymns - Collection</a></li>
+                <li><a href="taksa://open/FrBenny">Hymns - Fr. Benny</a></li>
+                <li><a href="taksa://open/FrKamalBidawid">Hymns - Fr. Kamal Bidawid</a></li>
+                <li><a href="taksa://open/HolyWeek">Hymns - Holy Week</a></li>
+                <li><a href="taksa://open/ShemedBabaBrona">Hymns - Shemed Baba Brona</a></li>
+                <li><a href="taksa://open/StJosephChoir">Hymns - St. Joseph Choir</a></li>
+                <li><a href="taksa://open/YourAssumption">Hymns - Your Assumption</a></li>
+                <li><a href="taksa://open/Settings">Information</a></li>
+                <li><a href="taksa://open/Instrumentals">Instrumentals</a></li>
+                <li><a href="taksa://open/LectorSubdiaconate">Lector and Subdiaconate</a></li>
+                <li><a href="taksa://open/LiturgicalCalendar">Liturgical Calendar</a></li>
+                <li><a href="taksa://open/Mass">Mass</a></li>
+                <li><a href="taksa://open/OtherBlessings">Other Blessings</a></li>
+                <li><a href="taksa://open/PrivacyPolicy">Privacy Policy</a></li>
+                <li><a href="taksa://open/Ramsha">Ramsha</a></li>
+                <li><a href="taksa://open/RamshaMartyrHymns">Ramsha - Martyr Hymns</a></li>
+                <li><a href="taksa://open/RamshaVolumeOne">Ramsha - Volume 1</a></li>
+                <li><a href="taksa://open/RamshaVolumeTwo">Ramsha - Volume 2</a></li>
+                <li><a href="taksa://open/RazaTleethaya">Raza Tleethaya</a></li>
+                <li><a href="taksa://open/ReshdQala">Resh d'Qala</a></li>
+                <li><a href="taksa://open/Aiyn">Resh d'Qalda - Aiyn</a></li>
+                <li><a href="taksa://open/Alep">Resh d'Qalda - Alep</a></li>
+                <li><a href="taksa://open/Beth">Resh d'Qalda - Beth</a></li>
+                <li><a href="taksa://open/Dalath">Resh d'Qalda - Dalath</a></li>
+                <li><a href="taksa://open/Heh">Resh d'Qalda - Heh</a></li>
+                <li><a href="taksa://open/Heith">Resh d'Qalda - Heith</a></li>
+                <li><a href="taksa://open/Kap">Resh d'Qalda - Kap</a></li>
+                <li><a href="taksa://open/Lamadh">Resh d'Qalda - Lamadh</a></li>
+                <li><a href="taksa://open/Meem">Resh d'Qalda - Meem</a></li>
+                <li><a href="taksa://open/Noon">Resh d'Qalda - Noon</a></li>
+                <li><a href="taksa://open/Pe">Resh d'Qalda - Pe</a></li>
+                <li><a href="taksa://open/Qop">Resh d'Qalda - Qop</a></li>
+                <li><a href="taksa://open/Resh">Resh d'Qalda - Resh</a></li>
+                <li><a href="taksa://open/Sadai">Resh d'Qalda - Sadai</a></li>
+                <li><a href="taksa://open/Sheen">Resh d'Qalda - Sheen</a></li>
+                <li><a href="taksa://open/Simkadh">Resh d'Qalda - Simkadh</a></li>
+                <li><a href="taksa://open/Taw">Resh d'Qalda - Taw</a></li>
+                <li><a href="taksa://open/Teith">Resh d'Qalda - Teith</a></li>
+                <li><a href="taksa://open/Yodh">Resh d'Qalda - Yodh</a></li>
+                <li><a href="taksa://open/Zayn">Resh d'Qalda - Zayn</a></li>
+                <li><a href="taksa://open/Services">Services</a></li>
+                <li><a href="taksa://open/ServicesBautha">Services - Bautha</a></li>
+                <li><a href="taksa://open/ServicesFuneral">Services - Funeral</a></li>
+                <li><a href="taksa://open/ServicesRosary">Services - Rosary</a></li>
+                <li><a href="taksa://open/ServicesStationsoftheCrossArabic">Services - Stations of the Cross (Arabic)</a></li>
+                <li><a href="taksa://open/ServicesStationsoftheCrossSureth">Services - Stations of the Cross (Sureth)</a></li>
+                <li><a href="taksa://open/SundayLectionary">Sunday Lectionary</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishAdvent">Sunday Lectionary English - Advent</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishCrowningoftheChurch">Sunday Lectionary English - Crowning of the Church</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishElijah">Sunday Lectionary English - Elijah</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishEpiphany">Sunday Lectionary English - Epiphany</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishLent">Sunday Lectionary English - Lent</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishMoses">Sunday Lectionary English - Moses</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishNativity">Sunday Lectionary English - Nativity</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishResurrection">Sunday Lectionary English - Resurrection</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishSummer">Sunday Lectionary English - Summer</a></li>
+                <li><a href="taksa://open/SundayLectionaryEnglishTheApostles">Sunday Lectionary English - The Apostles</a></li>
+                <li><a href="taksa://open/SundayLectionarySurethSundayEpistle">Sunday Lectionary Sureth - Sunday Epistle</a></li>
+                <li><a href="taksa://open/SundayLectionarySurethSundayGospel">Sunday Lectionary Sureth - Sunday Gospel</a></li>
+                <li><a href="taksa://open/TermsofUse">Terms of Use</a></li>
+                <li><a href="taksa://open/Wedding">Wedding</a></li>
+            </ul>
+            <script>
+                function myFunction() {
+                    var input, filter, ul, li, a, i;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                            
+                        }
+                    }
+                }
+            </script>
+            
+    </body>
+</html>
